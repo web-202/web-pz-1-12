@@ -2,3 +2,69 @@
 @import "reset";
 @import "media-query";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+.height {
+  @each $size, $width in $custom-heights {
+    &-#{$size} {
+      height: $width;
+    }
+  }
+}
+
+.width {
+  @each $size, $width in $custom-widths {
+    &-#{$size} {
+      width: $width;
+    }
+  }
+}
+
+.max-width {
+  @each $size, $width in $max-custom-width {
+    &-#{$size} {
+      max-width: $width;
+    }
+  }
+}
+
+
+.bg {
+  &-light-gray {
+    background-color: #d8d8d8;
+  }
+  &-dirty-gray {
+    background-color: #f5f7f7;
+  }
+}
+
+.nav-item {
+  background-color: rgb(33, 37, 41);
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+  margin-right: 8px;
+
+  .bar {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+  }
+}
+
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  margin: 0 10px !important;
+  border-radius: 100%;
+}
+
+.project-actions {
+  padding: 0 12px;
+}

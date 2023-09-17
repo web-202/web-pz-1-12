@@ -1,0 +1,17 @@
+$custom-widths: (
+  36:36px,
+);
+$custom-heights: (
+  36:36px,
+);
+$max-custom-width: ();
+
+@for $i from 1 through 100 {
+  $width: $i * 25;
+  $height: $i * 5;
+
+  $custom-widths: map-merge($custom-widths, (#{$width}: #{$width}px));
+  $max-custom-width: map-merge($max-custom-width, (#{$width}: #{$width}px));
+  $custom-heights: map-merge($custom-heights, (#{$height}: #{$height}px));
+}
+
