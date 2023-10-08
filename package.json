@@ -1,7 +1,7 @@
 {
-  "name": "pz-282-1-12",
+  "name": "pz-202-1-12",
   "version": "1.0.0",
-  "description": "A practical task in the discipline for  the 282 group",
+  "description": "A practical task in the discipline for  the 202 group",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Group282/pz-1-12.git"
+    "url": "git+https://github.com/Group202/pz-1-12.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Group282/pz-1-12/issues"
+    "url": "https://github.com/Group202/pz-1-12/issues"
   },
-  "homepage": "https://github.com/Group282/pz-1-12#readme",
+  "homepage": "https://github.com/Group202/pz-1-12#readme",
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "del": "^6.0.0",
