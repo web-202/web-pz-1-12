@@ -1,0 +1,15 @@
+header{
+    background-color: $backgroud-header;
+}
+
+.controls-header{
+   svg{
+      margin-right: 10px;
+   }
+
+   img{
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+   }
+}

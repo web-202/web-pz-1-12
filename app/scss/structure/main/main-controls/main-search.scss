@@ -1,0 +1,80 @@
+.main-content{
+    margin: 10px;
+
+    .card{
+        margin: 15px;
+    }
+
+    .main-head-content{
+        display: flex;
+        position: relative;
+    
+        .btn-warning{
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .card-title{
+        margin-bottom: 50px;
+    }
+
+    .card{
+        border: 0;
+    }
+
+    .block-cards{
+        margin: auto;
+    }
+}
+
+.profile-image{
+    img{
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 1px solid gray;
+     }
+}
+
+.content-card-down{
+    align-items: center;
+    position: relative;
+
+    .likes-watches{
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    
+    .profile-image{
+        margin-left: 5px;
+    }
+}
+
+.profile-count{
+    margin-left: 5px;
+    background-color: $profile-count-background;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    font-size: 12px;
+    padding-top: 6px;
+    text-align: center;
+}
+
+.content-cards{
+    display: flex;
+}
+
+.my-projects-main{
+    padding: 10px;
+    display: none;
+    background-color: $my-project-background;
+}
+
+.title-my-project{
+    margin-bottom: 10px;
+}

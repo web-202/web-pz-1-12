@@ -2,3 +2,7 @@
 @import "reset";
 @import "media-query";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import 'reset';
+@import 'variables';
+@import 'media-query';
+@import './structure/structure.scss'

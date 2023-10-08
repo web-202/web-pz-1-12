@@ -1,22 +1,67 @@
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-
-}
-
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-
+    body{
+        background-color: $backgroud-header-768;
+    }
 }
+
+@media (max-width: 768px) {
+    body{
+        background-color: $backgroud-header-768;
+    }
+}
+
+
+@media (max-width: 992px) {
+    #carouselExample{
+        display: none;
+    }
+}
+
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+ 
+}
 
+@media (min-width: 1024px) {
+    body{
+        background-color: $backgroud-header-1024;
+    }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
+    body{
+        background-color: $backgroud-header-1280;
+    }
+
+    main{
+        
+        background-color: $cards-backround;
+        
+        .my-projects-main{
+            display: block;
+        }
+    }
 
 }
+
+
+@media (min-width: 1440px) {
+    body{
+        background-color: $backgroud-header-1440;
+    }
+    
+    main{
+        .my-projects-main{
+            display: none;
+        }
+
+        background-color: #0d1117;
+    }
+}
+
