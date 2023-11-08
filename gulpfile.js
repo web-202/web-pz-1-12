@@ -10,13 +10,22 @@ const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const cache = require('gulp-cache');
 const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps')
+const cleanCSS = require('gulp-clean-css')
+const mincss = require('gulp-cssmin')
+
 
 gulp.task('sass', function () {
-  return gulp.src('app/scss/app.scss')
-    .pipe(sass())
-    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
-    .pipe(gulp.dest('app/css'))
-    .pipe(browserSync.reload({stream: true}))
+  return gulp.src('app/scss/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(concat('all.css'))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(cleanCSS())
+    .pipe(mincss())
+    .pipe(rename('main.css'))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('app/css/'))
 });
 
 gulp.task('browser-sync', function () {
